@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โหราศาสตร์และดวงชะตา</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ดูดวงรายปี</h1>
+
+        <div class="zodiac-selector">
+            <h2>เลือกราศีของคุณ</h2>
+            <select id="zodiacSelect">
+                <option value="">--กรุณาเลือกราศี--</option>
+                <option value="aries">ราศีเมษ (13 เม.ย. - 14 พ.ค.)</option>
+                <option value="taurus">ราศีพฤษภ (15 พ.ค. - 14 มิ.ย.)</option>
+                <option value="gemini">ราศีเมถุน (15 มิ.ย. - 14 ก.ค.)</option>
+                <option value="cancer">ราศีกรกฎ (15 ก.ค. - 14 ส.ค.)</option>
+                <option value="leo">ราศีสิงห์ (15 ส.ค. - 14 ก.ย.)</option>
+                <option value="virgo">ราศีกันย์ (15 ก.ย. - 14 ต.ค.)</option>
+                <option value="libra">ราศีตุลย์ (15 ต.ค. - 14 พ.ย.)</option>
+                <option value="scorpio">ราศีพิจิก (15 พ.ย. - 14 ธ.ค.)</option>
+                <option value="sagittarius">ราศีธนู (15 ธ.ค. - 14 ม.ค.)</option>
+                <option value="capricorn">ราศีมังกร (15 ม.ค. - 14 ก.พ.)</option>
+                <option value="aquarius">ราศีกุมภ์ (15 ก.พ. - 14 มี.ค.)</option>
+                <option value="pisces">ราศีมีน (15 มี.ค. - 12 เม.ย.)</option>
+            </select>
+
+            <!-- เพิ่มช่องกรอกวันเกิด -->
+            <div class="birthday-input">
+                <label for="birthDayInput">วันเกิด (1-31): </label>
+                <input id="birthDayInput" type="number" min="1" max="31" placeholder="เช่น 15">
+            </div>
+
+            <button onclick="showFortune()">ดูดวง</button>
+        </div>
+        <div id="fortuneResult" class="fortune-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
